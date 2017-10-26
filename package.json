@@ -1,0 +1,42 @@
+{
+  "name": "ngx-text-overflow-clamp",
+  "version": "0.0.1",
+  "description": "An Angular 4+ wrapper for text-overflow-clamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "lint": "npm run tslint \"src/*.ts\"",
+    "tslint": "tslint",
+    "prepublish": "npm run cleanup && npm run lint && ngc && copyfiles -f src/*.js src/*.js.map src/*.d.ts src/*.metadata.json ./dist",
+    "cleanup": "del src/*.js *.js src/*.js.map *.js.map src/*.d.ts *.d.ts src/*.metadata.json *.metadata.json src/*.ngsummary.json *.ngsummary.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbenzenhoefer/ngx-text-overflow-clamp.git"
+  },
+  "keywords": [
+    "ellipsis",
+    "clamp",
+    "overflow",
+    "dots"
+  ],
+  "author": "Moritz Benzenhöfer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbenzenhoefer/ngx-text-overflow-clamp/issues"
+  },
+  "homepage": "https://github.com/mbenzenhoefer/ngx-text-overflow-clamp#readme",
+  "devDependencies": {
+    "@angular/core": "^4.4.6",
+    "@angular/compiler": "^4.4.6",
+    "@angular/compiler-cli": "^4.4.6",
+    "copyfiles": "^1.2.0",
+    "del-cli": "^1.0.0",
+    "rxjs": "5.4.3",
+    "tslint": "^5.2.0",
+    "typescript": "~2.5.3"
+  },
+  "dependencies": {
+    "text-overflow-clamp": "^1.0.0"
+  }
+}
